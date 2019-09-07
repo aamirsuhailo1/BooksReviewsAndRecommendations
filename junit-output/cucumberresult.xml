@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="4" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="0">
+<testcase classname="BookreviewAndRecommendation login." name="Negative scenario for User unsuccessful login" time="0">
+<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given user is on  login page................................................undefined
+When user enters "uname1" and "pwd1" and user clicks on login button........undefined
+Then verify error message is displayed......................................undefined
+]]></failure>
+</testcase>
+<testcase classname="BookreviewAndRecommendation login." name="Negative scenario for User unsuccessful login 2" time="0">
+<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given user is on  login page................................................undefined
+When user enters "uname2" and "pwd2" and user clicks on login button........undefined
+Then verify error message is displayed......................................undefined
+]]></failure>
+</testcase>
+<testcase classname="BookreviewAndRecommendation login." name="Negative scenario for Author unsuccessful login" time="0">
+<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given user is on  login page................................................undefined
+When user enters "uname1" and "pwd1" and user clicks on login button........undefined
+Then verify error message is displayed......................................undefined
+]]></failure>
+</testcase>
+<testcase classname="BookreviewAndRecommendation login." name="Negative scenario for Author unsuccessful login 2" time="0">
+<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given user is on  login page................................................undefined
+When user enters "uname2" and "pwd2" and user clicks on login button........undefined
+Then verify error message is displayed......................................undefined
+]]></failure>
+</testcase>
+<testcase classname="BookreviewAndRecommendation login." name="User logins using correct credentials" time="0">
+<system-out><![CDATA[Given user is on the login page.............................................skipped
+When user enters username as "username".....................................skipped
+And user enters password as "password"......................................skipped
+And user clicks on Login button.............................................skipped
+Then user should land on home page..........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="BookreviewAndRecommendation login." name="Author logins using correct credentials" time="0">
+<system-out><![CDATA[Given author is on the login page...........................................skipped
+When author enters username as "username"...................................skipped
+And author enters password as "password"....................................skipped
+And author clicks on Login button...........................................skipped
+Then author should land on Author's home page ..............................skipped
+]]></system-out>
+</testcase>
+</testsuite>

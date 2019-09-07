@@ -1,0 +1,352 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Negative scenarios#"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 10,
+        "name": "Negative scenario for User unsuccessful login",
+        "description": "",
+        "id": "bookreviewandrecommendation-login.;negative-scenario-for-user-unsuccessful-login;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "user is on  login page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user enters \"uname1\" and \"pwd1\" and user clicks on login button",
+            "match": {},
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "verify error message is displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Negative scenario for User unsuccessful login",
+        "description": "",
+        "id": "bookreviewandrecommendation-login.;negative-scenario-for-user-unsuccessful-login;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "user is on  login page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user enters \"uname2\" and \"pwd2\" and user clicks on login button",
+            "match": {},
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "verify error message is displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Negative scenario for Author unsuccessful login",
+        "description": "",
+        "id": "bookreviewandrecommendation-login.;negative-scenario-for-author-unsuccessful-login;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "user is on  login page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "user enters \"uname1\" and \"pwd1\" and user clicks on login button",
+            "match": {},
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "verify error message is displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Negative scenario for Author unsuccessful login",
+        "description": "",
+        "id": "bookreviewandrecommendation-login.;negative-scenario-for-author-unsuccessful-login;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "user is on  login page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "user enters \"uname2\" and \"pwd2\" and user clicks on login button",
+            "match": {},
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "verify error message is displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "BookreviewAndRecommendation login.",
+    "description": "",
+    "id": "bookreviewandrecommendation-login.",
+    "keyword": "Feature",
+    "uri": "LoginNegative.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 3,
+            "value": "#positive scenarios#"
+          }
+        ],
+        "line": 4,
+        "name": "User logins using correct credentials",
+        "description": "",
+        "id": "bookreviewandrecommendation-login.;user-logins-using-correct-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "LoginPositiveStepDefinition.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user enters username as \"username\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginPositiveStepDefinition.user_enters_username_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user enters password as \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginPositiveStepDefinition.user_enters_password_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user clicks on Login button",
+            "match": {
+              "location": "LoginPositiveStepDefinition.user_clicks_on_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user should land on home page.",
+            "match": {
+              "location": "LoginPositiveStepDefinition.user_should_land_on_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Author logins using correct credentials",
+        "description": "",
+        "id": "bookreviewandrecommendation-login.;author-logins-using-correct-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "author is on the login page",
+            "match": {
+              "location": "LoginPositiveStepDefinition.author_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "author enters username as \"username\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 27
+                }
+              ],
+              "location": "LoginPositiveStepDefinition.author_enters_username_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "author enters password as \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 27
+                }
+              ],
+              "location": "LoginPositiveStepDefinition.author_enters_password_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "author clicks on Login button",
+            "match": {
+              "location": "LoginPositiveStepDefinition.author_clicks_on_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "author should land on Author\u0027s home page .",
+            "match": {
+              "location": "LoginPositiveStepDefinition.author_should_land_on_Author_s_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "BookreviewAndRecommendation login.",
+    "description": "",
+    "id": "bookreviewandrecommendation-login.",
+    "keyword": "Feature",
+    "uri": "loginPositive.feature"
+  }
+]
