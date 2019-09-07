@@ -9,8 +9,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		  features = "./src/main/java/com/hack2hire/features",
 		  glue = {"com.hack2hire.stepDefinitions"},
-		  format = {"pretty","html:TestResults","json:json-ouptut/cucumberresult.json","junit:junit-output/cucumberresult.xml"},
-		  dryRun = true,
+		  format = {"pretty","html:TestResults/h2h.html","json:json-ouptut/cucumberresult.json","junit:junit-output/cucumberresult.xml"},
+		  dryRun = false,
 		  monochrome = true,
 		  strict = true
 		)

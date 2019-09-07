@@ -17,14 +17,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
  */
 public class TestBase {
 	
-	WebDriver driver;
-	Properties prop;
+	public WebDriver driver;
+	public Properties prop;
 	
-	public void init() {
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver.exe");
+	public WebDriver init() throws FileNotFoundException, IOException, InterruptedException {
+		 initPropertyFiles();
+		 System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver.exe");
 		 driver = new ChromeDriver();
 		 driver.manage().window().maximize();
-		 driver.get("https://classic.crmpro.com/index.html?e=2");
+		 driver.get(prop.getProperty("url"));
+		 Thread.sleep(5000);
+		 return driver;
 	}
 	
 	public void initPropertyFiles() throws FileNotFoundException, IOException {
