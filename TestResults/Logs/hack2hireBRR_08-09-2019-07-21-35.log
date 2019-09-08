@@ -1,0 +1,7 @@
+2019-09-08 07:21:56,335  INFO [main] LoginPositiveStepDefinition:48 - Login Page title is : HubSpot Login
+2019-09-08 07:21:56,345  INFO [main] LoginPositiveStepDefinition:50 - Verfied Login page launch successfully
+2019-09-08 07:21:57,872  INFO [main] LoginPositiveStepDefinition:57 - Username is entered
+2019-09-08 07:21:58,232  INFO [main] LoginPositiveStepDefinition:64 - Password is entered
+2019-09-08 07:22:06,421  INFO [main] LoginPositiveStepDefinition:70 - Clicked on Login button
+2019-09-08 07:22:07,134  INFO [main] LoginPositiveStepDefinition:76 - Home Page heading is : Getting started with HubSpot
+2019-09-08 07:22:07,134  INFO [main] LoginPositiveStepDefinition:78 - verified homepage landing after logging in successfully

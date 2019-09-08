@@ -49,35 +49,35 @@ formatter.match({
   "location": "LoginPositiveStepDefinition.user_is_on_the_login_page()"
 });
 formatter.result({
-  "duration": 22894207238,
+  "duration": 20520276614,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPositiveStepDefinition.user_enters_username()"
 });
 formatter.result({
-  "duration": 531013163,
+  "duration": 1097665530,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPositiveStepDefinition.user_enters_password()"
 });
 formatter.result({
-  "duration": 222246945,
+  "duration": 358216008,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPositiveStepDefinition.user_clicks_on_Login_button()"
 });
 formatter.result({
-  "duration": 513087030,
+  "duration": 8186452562,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPositiveStepDefinition.user_should_land_on_home_page()"
 });
 formatter.result({
-  "duration": 19294,
+  "duration": 722378930,
   "status": "passed"
 });
 });

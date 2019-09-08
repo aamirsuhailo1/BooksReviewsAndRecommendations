@@ -51,10 +51,11 @@ public class LoginPage {
 	
 	/**
 	 * This method clicks on Login button
+	 * @throws InterruptedException 
 	 */
-	public void clickOnLoginButton() {
+	public void clickOnLoginButton() throws InterruptedException {
 		btnLogin.click();
-		
+		Thread.sleep(8000);
 	}
 	
 	

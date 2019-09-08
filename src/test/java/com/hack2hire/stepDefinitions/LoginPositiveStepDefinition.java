@@ -8,6 +8,7 @@ package com.hack2hire.stepDefinitions;
 import org.openqa.selenium.WebDriver;
 
 import com.hack2hire.base.TestBase;
+import com.hack2hire.pages.HomePage;
 import com.hack2hire.pages.LoginPage;
 
 import cucumber.api.java.en.Given;
@@ -29,43 +30,52 @@ public class LoginPositiveStepDefinition extends TestBase {
 	WebDriver driver;
 	String titleLoginPage;
 	LoginPage login;
+	HomePage homepage;
 	String userName;
 	String password;
+	String homepageHeading;
 	
 	public LoginPositiveStepDefinition() throws FileNotFoundException, IOException, InterruptedException {
 		driver = init();
 		login = new LoginPage(driver);
+		homepage = new HomePage(driver);
 	}
 	
 	/************User Login scenario ********/
 	@Given("^user is on the login page$")
 	public void user_is_on_the_login_page() {
 	   titleLoginPage = driver.getTitle();
-	  // System.out.println(titleLoginPage);
+	   logger.info("Login Page title is : "+titleLoginPage);
 	   Assert.assertEquals(titleLoginPage, "HubSpot Login");
+	   logger.info("Verfied Login page launch successfully");
 	}
 
 	@When("^user enters username$")
 	public void user_enters_username() {
 	   userName = prop.getProperty("username");
 	   login.enterUserName(userName);
+	   logger.info("Username is entered");
 	}
 
 	@When("^user enters password$")
 	public void user_enters_password() {
 		password = prop.getProperty("password");
 	    login.enterPassword(password);
+	    logger.info("Password is entered");
 	}
 
 	@When("^user clicks on Login button$")
-	public void user_clicks_on_Login_button() {
+	public void user_clicks_on_Login_button() throws InterruptedException {
 	    login.clickOnLoginButton();
-	    driver.close();
+	    logger.info("Clicked on Login button");
 	}
 
 	@Then("^user should land on home page\\.$")
 	public void user_should_land_on_home_page() {
-	    
+	    homepageHeading = homepage.getHeading();
+	    logger.info("Home Page heading is : "+homepageHeading);
+	    Assert.assertEquals("Getting started with HubSpot", homepageHeading);
+	    logger.info("verified homepage landing after logging in successfully");
 	}
    /*   *//*************Author Login scenario*****************//*
 	@Given("^author is on the login page$")
