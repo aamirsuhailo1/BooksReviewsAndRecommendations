@@ -24,6 +24,10 @@ public class HomePage {
 		PageFactory.initElements(driver, this);
 	}
 	
+	/**
+	 * This method will return HomePage heading
+	 * @return
+	 */
 	public String getHeading(){
 		  return homepageHeading.getText();
 	}

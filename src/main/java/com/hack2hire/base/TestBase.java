@@ -29,6 +29,13 @@ public class TestBase {
 	public Properties prop;
 	public Logger logger;
 	
+	/**
+	 * This method will Initialize Logger, property file and WebDriver instance 
+	 * @return
+	 * @throws FileNotFoundException
+	 * @throws IOException
+	 * @throws InterruptedException
+	 */
 	public WebDriver init() throws FileNotFoundException, IOException, InterruptedException {
 		initializeLogger();
 		initPropertyFiles();
@@ -40,12 +47,20 @@ public class TestBase {
 		 return driver;
 	}
 	
+	/**
+	 * Property file initialization
+	 * @throws FileNotFoundException
+	 * @throws IOException
+	 */
 	public void initPropertyFiles() throws FileNotFoundException, IOException {
 		prop = new Properties();
 		prop.load(new FileInputStream("./src/main/java/com/hack2hire/config/setup.properties"));
 		
 	}
 	
+	/**
+	 * Log4j Initialization
+	 */
 	public void initializeLogger() {
 		logger = Logger.getLogger(this.getClass()); 
 	}
