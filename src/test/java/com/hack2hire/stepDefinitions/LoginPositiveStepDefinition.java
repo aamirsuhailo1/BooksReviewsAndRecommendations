@@ -33,7 +33,7 @@ public class LoginPositiveStepDefinition extends TestBase {
 	HomePage homepage;
 	String userName;
 	String password;
-	String homepageHeading;
+	String homepageHeader;
 	
 	public LoginPositiveStepDefinition() throws FileNotFoundException, IOException, InterruptedException {
 		driver = init();
@@ -72,7 +72,7 @@ public class LoginPositiveStepDefinition extends TestBase {
 
 	@Then("^user should land on home page\\.$")
 	public void user_should_land_on_home_page() {
-	    homepageHeading = homepage.getHeading();
+	    homepageHeader = homepage.getHeading();
 	    logger.info("Home Page heading is : "+homepageHeading);
 	    Assert.assertEquals("Getting started with HubSpot", homepageHeading);
 	    logger.info("verified homepage landing after logging in successfully");
