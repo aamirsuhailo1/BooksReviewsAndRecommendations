@@ -1,7 +1,9 @@
+#Feature description
 Feature: BookreviewAndRecommendation login. 
 
-
-Scenario: User logins using correct credentials
+# Scenario Description
+Scenario: Verify user logins using correct credentials
+# Steps to login
 	Given user is on the login page
 	When user enters username
 	And user enters password
