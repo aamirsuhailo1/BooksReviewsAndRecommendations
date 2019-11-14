@@ -39,9 +39,12 @@ public class TestBase {
 	public WebDriver init() throws FileNotFoundException, IOException, InterruptedException {
 		initializeLogger();
 		initPropertyFiles();
+		//Launching the browser
 		 System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver.exe");
 		 driver = new ChromeDriver();
+		//Maximizing browser window
 		 driver.manage().window().maximize();
+		//Navigating to url
 		 driver.get(prop.getProperty("url"));
 		 Thread.sleep(5000);
 		 return driver;
