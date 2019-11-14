@@ -73,8 +73,8 @@ public class LoginPositiveStepDefinition extends TestBase {
 	@Then("^user should land on home page\\.$")
 	public void user_should_land_on_home_page() {
 	    homepageHeader = homepage.getHeading();
-	    logger.info("Home Page heading is : "+homepageHeading);
-	    Assert.assertEquals("Getting started with HubSpot", homepageHeading);
+	    logger.info("Home Page heading is : "+homepageHeader);
+	    Assert.assertEquals("Getting started with HubSpot", homepageHeader);
 	    logger.info("verified homepage landing after logging in successfully");
 	}
    /*   *//*************Author Login scenario*****************//*
