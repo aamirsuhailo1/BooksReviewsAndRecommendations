@@ -56,7 +56,7 @@ public class TestBase {
 	 * @throws IOException
 	 */
 	public void initPropertyFiles() throws FileNotFoundException, IOException {
-		prop = new Properties();
+		prop = new Properties();// creating the object for the Properities Constructor which is class in Properities file
 		prop.load(new FileInputStream("./src/main/java/com/hack2hire/config/setup.properties"));
 		
 	}
